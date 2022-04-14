@@ -6,7 +6,7 @@ jobs:
     steps:
       - run:
           name: The First Step
-          env:
-            TOKEN: ${{ secrets.AUTHTOKEN }}
+          # env:
+          # TOKEN: ${{ secrets.AUTHTOKEN }}
           command: |
-            echo $TOKEN
+            echo ${{ secrets.AUTHTOKEN }}
